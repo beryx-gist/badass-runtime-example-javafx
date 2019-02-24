@@ -1,0 +1,19 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+    id 'org.beryx.runtime' version '1.1.5'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    modules = ['javafx.controls']
+}
+
+application {
+    mainClassName = "org.example.hellofx.Launcher"
+    applicationName = 'hellofx'
+}

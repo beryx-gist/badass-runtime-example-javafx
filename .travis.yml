@@ -1,0 +1,17 @@
+if: tag IS blank
+
+language: java
+
+sudo: false
+
+jdk:
+  - openjdk11
+
+install:
+  - chmod a+x ./gradlew
+
+cache:
+  directories:
+    - $HOME/.gradle
+
+script: ./gradlew --info --stacktrace runtimeZip
