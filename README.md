@@ -4,7 +4,7 @@
 
 ## Badass Runtime Plugin Example: JavaFX Application ##
 
-A small JavaFX application that shows how to use the [Badass Runtime Plugin](https://github.com/beryx/badass-runtime-plugin/).
+A small JavaFX 11 non-modular application that shows how to use the [Badass Runtime Plugin](https://github.com/beryx/badass-runtime-plugin/).
 
 The plugin is configured in `build.gradle` as follows:
 
@@ -36,7 +36,7 @@ application {
 ./gradlew run
 ```
 
-A window containing the text `Hello, OpenFX!` should appear on the screen.
+A window containing the text `Hello, OpenJFX!` should appear on the screen.
 
 
 **Creating and executing a custom runtime image:**
@@ -46,4 +46,4 @@ cd build/image/bin
 ./hellofx
 ```
 
-A window containing the text `Hello, OpenFX!` should appear on the screen.
+A window containing the text `Hello, OpenJFX!` should appear on the screen.
