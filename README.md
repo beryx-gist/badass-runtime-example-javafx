@@ -6,29 +6,7 @@
 
 A small JavaFX 11 non-modular application that shows how to use the [Badass Runtime Plugin](https://github.com/beryx/badass-runtime-plugin/).
 
-The plugin is configured in `build.gradle` as follows:
-
-```
-plugins {
-    id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.7'
-    id 'org.beryx.runtime' version '1.1.5'
-}
-
-
-repositories {
-    mavenCentral()
-}
-
-javafx {
-    modules = ['javafx.controls']
-}
-
-application {
-    mainClassName = "org.example.hellofx.Launcher"
-    applicationName = 'hellofx'
-}
-```
+It allows you create custom runtime image of your application and a platform-specific installer for it.
 
 ### Usage
 **Running with gradle:**
@@ -47,3 +25,11 @@ cd build/image/bin
 ```
 
 A window containing the text `Hello, OpenJFX!` should appear on the screen.
+
+
+**Creating a platform-specific installer:**
+```
+./gradlew jpackage
+```
+
+The above command will generate the platform-specific installers in the `build/jpackage` directory.
