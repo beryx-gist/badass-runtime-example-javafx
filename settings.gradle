@@ -1,1 +1,8 @@
+// Uncomment pluginManagement block for testing local plugin versions published to mavenLocal()
+// pluginManagement {
+//     repositories {
+//         mavenLocal()
+//         gradlePluginPortal()
+//     }
+// }
 rootProject.name = 'hellofx'
