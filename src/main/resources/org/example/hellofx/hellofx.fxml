@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:id="borderPane" prefHeight="320.0" prefWidth="480.0" stylesheets="@hellofx.css" fx:controller="org.example.hellofx.Controller" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ImageView fx:id="helloImage" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@javafx.png" />
+         </image>
+      </ImageView>
+   </center>
+   <top>
+      <Label fx:id="helloLabel" alignment="CENTER" contentDisplay="CENTER" text="Hello" textAlignment="CENTER" BorderPane.alignment="CENTER">
+      </Label>
+   </top>
+   <bottom>
+      <Button fx:id="changeGreetingButton" alignment="CENTER" mnemonicParsing="false" onAction="#changeGreeting" text="Change greeting" textAlignment="CENTER" BorderPane.alignment="CENTER_RIGHT">
+      </Button>
+   </bottom>
+</BorderPane>

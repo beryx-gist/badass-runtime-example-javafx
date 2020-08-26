@@ -1,0 +1,15 @@
+#borderPane {
+    -fx-background-color: #ffc90e;
+    -fx-padding: 10 10 10 10;
+}
+
+#helloLabel {
+    -fx-text-fill: purple;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 72;
+    -fx-padding: 20 0 0 0;
+}
+
+#changeGreetingButton {
+    -fx-text-fill: blue;
+}

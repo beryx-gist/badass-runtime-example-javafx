@@ -1,16 +1,15 @@
 plugins {
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.9'
-    id 'org.beryx.runtime' version '1.11.2'
+    id 'org.beryx.runtime' version '1.11.3'
 }
-
 
 repositories {
     mavenCentral()
 }
 
 javafx {
-    modules = ['javafx.controls']
+    modules = ['javafx.controls', 'javafx.fxml']
 }
 
 application {
@@ -24,7 +23,11 @@ runtime {
         noConsole = true
     }
     jpackage {
-        if(org.gradle.internal.os.OperatingSystem.current().windows) {
+        def currentOs = org.gradle.internal.os.OperatingSystem.current()
+        def imgType = currentOs.windows ? 'ico' : currentOs.macOsX ? 'icns' : 'png'
+        imageOptions += ['--icon', "src/main/resources/hellofx.$imgType"]
+        installerOptions += ['--resource-dir', "build/jpackage/hellofx/lib"]
+        if(currentOs.windows) {
             installerOptions += ['--win-per-user-install', '--win-dir-chooser', '--win-menu', '--win-shortcut']
         }
     }
