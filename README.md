@@ -7,7 +7,7 @@
 
 A small JavaFX 11 non-modular application that shows how to use the [Badass Runtime Plugin](https://github.com/beryx/badass-runtime-plugin/).
 
-It allows you to create custom runtime image of your application and a platform-specific installer for it.
+It allows you to create a custom runtime image of your application and a platform-specific installer for it.
 
 ### Usage
 **Running with gradle:**
@@ -37,4 +37,4 @@ A window containing the text `Hello JavaFX` should appear on the screen.
 
 The above command will generate the platform-specific installers in the `build/jpackage` directory.
 
-:bulb: You can check the artifacts produced by the [GitHub actions used to build this project](https://github.com/beryx-gist/badass-runtime-example-javafx/actions?query=workflow%3A%22Gradle+Build%22) and download an application package for your platform (such as [from here](https://github.com/beryx-gist/badass-runtime-example-javafx/actions/runs/224938848)).
+:bulb: You can check the artifacts produced by the [GitHub actions used to build this project](https://github.com/beryx-gist/badass-runtime-example-javafx/actions?query=workflow%3A%22Gradle+Build%22) and download an application package for your platform (such as [from here](https://github.com/beryx-gist/badass-runtime-example-javafx/actions/runs/225236611)).
