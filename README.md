@@ -1,6 +1,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/beryx-gist/badass-runtime-example-javafx/blob/master/LICENSE)
-[![Build Status](https://img.shields.io/travis/beryx-gist/badass-runtime-example-javafx/master.svg?label=Build)](https://travis-ci.org/beryx-gist/badass-runtime-example-javafx)
+[![Build Status](https://github.com/beryx-gist/badass-runtime-example-javafx/workflows/Gradle%20Build/badge.svg)](https://github.com/beryx-gist/badass-runtime-example-javafx/actions?query=workflow%3A%22Gradle+Build%22)
+
 
 ## Badass Runtime Plugin Example: JavaFX Application ##
 
@@ -14,7 +15,9 @@ It allows you to create custom runtime image of your application and a platform-
 ./gradlew run
 ```
 
-A window containing the text `Hello JavaFX` should appear on the screen.
+The following window should appear on the screen:
+
+<img src="https://github.com/beryx-gist/badass-runtime-example-javafx/raw/master/doc/app.png">
 
 
 **Creating and executing a custom runtime image:**
@@ -33,3 +36,5 @@ A window containing the text `Hello JavaFX` should appear on the screen.
 ```
 
 The above command will generate the platform-specific installers in the `build/jpackage` directory.
+
+:bulb: You can check the artifacts produced by the [GitHub actions used to build this project](https://github.com/beryx-gist/badass-runtime-example-javafx/actions?query=workflow%3A%22Gradle+Build%22) and download an application package for your platform (such as [from here](https://github.com/beryx-gist/badass-runtime-example-javafx/actions/runs/224938848)).
