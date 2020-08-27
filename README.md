@@ -27,8 +27,6 @@ cd build/image/bin
 ./hellofx
 ```
 
-A window containing the text `Hello JavaFX` should appear on the screen.
-
 
 **Creating a platform-specific installer:**
 ```
@@ -37,4 +35,4 @@ A window containing the text `Hello JavaFX` should appear on the screen.
 
 The above command will generate the platform-specific installers in the `build/jpackage` directory.
 
-:bulb: You can check the artifacts produced by the [GitHub actions used to build this project](https://github.com/beryx-gist/badass-runtime-example-javafx/actions?query=workflow%3A%22Gradle+Build%22) and download an application package for your platform (such as [from here](https://github.com/beryx-gist/badass-runtime-example-javafx/actions/runs/225236611)).
+:bulb: You can check the artifacts produced by the [GitHub actions used to build this project](https://github.com/beryx-gist/badass-runtime-example-javafx/actions?query=workflow%3A%22Gradle+Build%22) and download an application package for your platform (such as [from here](https://github.com/beryx-gist/badass-runtime-example-javafx/actions/runs/225251734)).
