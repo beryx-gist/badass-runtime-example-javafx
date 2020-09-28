@@ -8,6 +8,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macOS-latest, windows-latest]
+        java: [ '14.0.2', '15' ]
       fail-fast: false
     name: ${{ matrix.os }}
     steps:
@@ -16,7 +17,7 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v1
       with:
-        java-version: '14.0.2'
+        java-version: ${{ matrix.java }}
     - name: Echo JAVA_HOME
       run: echo $JAVA_HOME
     - name: Verify Gradle Wrapper
