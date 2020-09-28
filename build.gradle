@@ -26,7 +26,8 @@ runtime {
         def currentOs = org.gradle.internal.os.OperatingSystem.current()
         def imgType = currentOs.windows ? 'ico' : currentOs.macOsX ? 'icns' : 'png'
         imageOptions += ['--icon', "src/main/resources/hellofx.$imgType"]
-        installerOptions += ['--resource-dir', "build/jpackage/hellofx/lib"]
+        installerOptions += ['--resource-dir', "src/main/resources"]
+        installerOptions += ['--vendor', 'Acme Corporation']
         if(currentOs.windows) {
             installerOptions += ['--win-per-user-install', '--win-dir-chooser', '--win-menu', '--win-shortcut']
         }
