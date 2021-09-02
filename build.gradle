@@ -1,7 +1,7 @@
 plugins {
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.9'
-    id 'org.beryx.runtime' version '1.12.3'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+    id 'org.beryx.runtime' version '1.12.5'
 }
 
 repositories {
@@ -13,7 +13,7 @@ javafx {
 }
 
 application {
-    mainClassName = "org.example.hellofx.Launcher"
+    mainClass = "org.example.hellofx.Launcher"
     applicationName = 'hellofx'
 }
 
